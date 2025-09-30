@@ -5,26 +5,42 @@ body {
     padding: 20px;
 }
 
-/* Styles for the playlist list items */
+/* Styles for the playlist list items and links */
+.song-list {
+    padding: 0; /* Remove default padding */
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
 .song-list li {
-    list-style-type: none; /* Required style */
+    list-style-type: none; /* Required style for <li> */
     padding: 5px 0;
 }
 
 .song-list a {
-    text-decoration-line: none; /* Required style */
-    color: #333; /* Dark color for visibility on light background */
+    text-decoration-line: none; /* Required style for <a> */
+    color: #007bff; /* A nice visible color for links */
+    display: block;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
+
+.song-list a:hover {
+    background-color: #f0f0f0;
+}
+
 
 /* Styles for Container Class 1: Audio Player */
 .player_one {
     /* Required styles: background-color, padding, border-radius */
     background-color: rgb(255, 255, 255);
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
     max-width: 500px;
     margin: 20px auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
 
@@ -36,7 +52,7 @@ body {
     border-radius: 10px;
     max-width: 800px;
     margin: 20px auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
 
